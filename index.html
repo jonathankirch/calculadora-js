@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<script src="calculadora.js"></script>
+<body>
+    <div id="corpo">
+        <div>
+            <input type="text" id="display" readonly>
+        </div>
+        <div id="butons">
+            <div>
+                <button onclick="addToDisplay('7')" class="preto">7</button>
+                <button onclick="addToDisplay('8')" class="preto">8</button>
+                <button onclick="addToDisplay('9')" class="preto">9</button>
+                <button onclick="addToDisplay('+')" class="laranja">+</button>
+            </div>
+            <div>
+                <button onclick="addToDisplay('4')" class="preto">4</button>
+                <button onclick="addToDisplay('5')" class="preto">5</button>
+                <button onclick="addToDisplay('6')" class="preto">6</button>
+                <button onclick="addToDisplay('-')" class="laranja">-</button>
+            </div>
+            <div>
+                <button onclick="addToDisplay('1')" class="preto">1</button>
+                <button onclick="addToDisplay('2')" class="preto">2</button>
+                <button onclick="addToDisplay('3')" class="preto">3</button>
+                <button onclick="addToDisplay('*')" class="laranja">*</button>
+            </div>
+            <div>
+                <button onclick="addToDisplay('0')" class="preto">0</button>
+                <button onclick="calculate()" class="laranja">=</button>
+                <button onclick="clearDisplay()" class="cinza">C</button>
+                <button onclick="addToDisplay('/')" class="cinza">/</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
